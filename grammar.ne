@@ -1,9 +1,7 @@
-@builtin "./src/lexer.js"
-
 # Program
 Program -> Statements
 
-# Statementssing a l
+# Statements
 Statements -> Statement Statements
             |
 
