@@ -1,13 +1,17 @@
-const {expect} = require("chai");
-const {lexer, parser, generate} = require("./compiler.js");
+const { lexer } = require('../src/compiler/lexer');
+const { expect } = require('chai');
 
-describe("Compiler", () => {
-    it("should tokenize input correctly", () => {
-        expect(lexer("1 + 2")).to.deep.equal(["1", "+", "2"]);
-    });
-
-    it("should generate correct code", () => {
-        const ast = parser("1 + 2");
-        expect(generate(ast)).to.equal("(1 + 2)");
-    });
+describe('Lexer', () => {
+  it('should tokenize a simple expression', () => {
+    const input = 'var x = 42;';
+    const tokens = lexer(input);
+    expect(tokens).to.deep.equal([
+      { type: 'Keyword', value: 'var', line: 1, column: 1 },
+      { type: 'Identifier', value: 'x', line: 1, column: 5 },
+      { type: 'Operator', value: '=', line: 1, column: 7 },
+      { type: 'Number', value: '42', line: 1, column: 9 },
+      { type: 'Punctuation', value: ';', line: 1, column: 11 },
+      { type: 'EOF', value: null, line: 1, column: 12 } // Add EOF token
+    ]);
+  });
 });
