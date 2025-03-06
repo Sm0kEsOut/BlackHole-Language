@@ -17,7 +17,7 @@ Statement -> VariableDeclaration
            | Comment
 
 # Variable declaration
-VariableDeclaration -> "local" Identifier "=" Expression ";" | "string" Identifier "=" StringLiteral ";" |  "boolean" Identifier "=" BooleanLiteral ";" | "bool" Identifier "=" BooleanLiteral ";" | "int" Identifier "=" Number ";" | "num" Identifier "=" Number ";"
+VariableDeclaration -> "local" Identifier "=" PrimaryExpression ";" | "string" Identifier "=" StringLiteral ";" |  "boolean" Identifier "=" BooleanLiteral ";" | "bool" Identifier "=" BooleanLiteral ";" | "int" Identifier "=" Number ";" | "num" Identifier "=" Number ";"
 
 # Function declaration
 FunctionDeclaration -> "function" Identifier "(" Parameters? ")" Block
@@ -100,3 +100,59 @@ NilLiteral -> "nil" | "null"
 Identifier -> _Letter _IdentifierChars*
 _Letter -> [a-zA-Z_]
 _IdentifierChars -> [a-zA-Z0-9_]
+
+# Tokens
+Number -> [0-9]+ ("." [0-9]+)?;
+StringLiteral -> "\"" [^"]* "\"";
+BooleanLiteral -> "true" | "false";
+NilLiteral -> "nil" | "null";
+Identifier -> [a-zA-Z_] [a-zA-Z0-9_]*;
+
+# Keywords
+"var" -> "var"
+"function" -> "function"
+"if" -> "if"
+"else" -> "else"
+"elseif" -> "elseif"
+"while" -> "while"
+"return" -> "return"
+"true" -> "true"
+"false" -> "false"
+"and" -> "and"
+"or" -> "or"
+"not" -> "not"
+"for" -> "for"
+"break" -> "break"
+"repeat" -> "repeat"
+"nil" -> "nil"
+"null" -> "null"
+"print" -> "print"
+"until" -> "until"
+
+# Operators
+"+" -> "+"
+"-" -> "-"
+"*" -> "*"
+"/" -> "/"
+"//" -> "//"
+"^" -> "^"
+"%" -> "%"
+"+=" -> "+="
+"-=" -> "-="
+"*=" -> "*="
+"/=" -> "/="
+"//=" -> "//="
+"%=" -> "%="
+"^=" -> "^="
+"..=" -> "..="
+"=" -> "="
+"==" -> "=="
+"!=" -> "!="
+"<" -> "<"
+">" -> ">"
+"<=" -> "<="
+">=" -> ">="
+"&" -> "&"
+"|" -> "|"
+".." -> ".."
+"#" -> "#"
