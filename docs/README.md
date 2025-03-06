@@ -225,7 +225,7 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 ## License
 
-Blackhole is licensed under the BSD 3-Clause License. See the LICENSE file for more details.
+Blackhole is licensed under the BSD 3-Clause License. See the [LICENSE](https://github.com/Sm0kEsOut/BlackHole-Language/blob/main/LICENSE) file for more details.
 
 ## Support
 
