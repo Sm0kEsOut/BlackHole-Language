@@ -17,7 +17,7 @@ Statement -> VariableDeclaration
            | Comment
 
 # Variable declaration
-VariableDeclaration -> "var" Identifier "=" Expression ";"
+VariableDeclaration -> "local" Identifier "=" Expression ";" | "string" Identifier "=" StringLiteral ";" |  "boolean" Identifier "=" BooleanLiteral ";" | "bool" Identifier "=" BooleanLiteral ";" | "int" Identifier "=" Number ";" | "num" Identifier "=" Number ";"
 
 # Function declaration
 FunctionDeclaration -> "function" Identifier "(" Parameters? ")" Block

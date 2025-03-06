@@ -24,7 +24,7 @@ function lexer(input) {
     let line = 1;
     let column = 1;
 
-    const KEYWORDS = ['if', 'else', 'elseif', 'while', 'function', 'return', 'var', 'true', 'false', 'and', 'or', '/', 'not', 'for', 'break', 'func', 'repeat', 'nil', 'null', 'print', 'until', 'type', 'string', 'boolean', 'bool', 'num', 'int', '?'];
+    const KEYWORDS = ['if', 'else', 'elseif', 'while', 'function', 'return', 'local', 'true', 'false', 'and', 'or', '/', 'not', 'for', 'break', 'func', 'repeat', 'nil', 'null', 'print', 'until', 'type', 'string', 'boolean', 'bool', 'num', 'int', '?'];
     const OPERATORS = ['+', '-', '*', '/', '//', '^', '%', '-', '+=', '-=', '*=', '/=', '//=', '%=', '^=', '..=', '=', '==', '!=', '<', '>', '<=', '>=', '&', '|', '..', '#']; // '//' floor division, '^' exponent, '%' modulus operation, '#' length operator
 
     const tokenSpecs = [
