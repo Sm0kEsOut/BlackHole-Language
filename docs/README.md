@@ -229,4 +229,4 @@ Blackhole is licensed under the BSD 3-Clause License. See the [LICENSE](https://
 
 ## Support
 
-If you have any questions or need support, please open an issue on the GitHub repository or join our community forum.
+If you have any questions or need support, please open an [issue](https://github.com/Sm0kEsOut/BlackHole-Language/issues/new) on the GitHub repository, join our discord, or join our community [discussion](https://github.com/Sm0kEsOut/BlackHole-Language/discussions).
