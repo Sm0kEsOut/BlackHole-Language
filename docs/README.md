@@ -4,12 +4,7 @@
 
 ## Features
 
-- **Simple Syntax**: Easy-to-read and write syntax inspired by modern programming languages.
-- **Strong Typing**: Ensures type safety and reduces runtime errors.
-- **Memory Management**: Automatic memory management with garbage collection.
-- **Concurrency Support**: Built-in support for concurrent programming.
-- **Cross-Platform**: Compiles to native code for multiple platforms.
-- **Extensible**: Easily extend the language with custom libraries and modules.
+- **Simple Syntax**: Easy-to-read and write syntax inspired by modern programming languages such as [Lua](https://www.lua.org/docs.html) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
 ## Installation
 
