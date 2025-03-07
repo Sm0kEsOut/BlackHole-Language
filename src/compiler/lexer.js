@@ -96,4 +96,4 @@ function lexer(input) {
     return tokens;
 }
 
-module.exports = { lexer };
+module.exports = { lexer, TokenType };

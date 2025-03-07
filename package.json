@@ -1,7 +1,7 @@
 {
   "name": "blackhole-language",
   "version": "0.0.1",
-  "main": "./src/test.js",
+  "main": "./src/compiler/main.js",
   "scripts": {
     "test": "mocha"
   },
